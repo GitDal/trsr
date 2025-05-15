@@ -4,11 +4,14 @@
 
 ### 1.1 Document Title & Version
 
-Team Success Recognition System (TSRS) - Version 1.0
+Team Success Recognition System (TSRS) - Version 1.1
 
 ### 1.2 Product Summary
 
-A digital platform designed to celebrate team and individual achievements through a badge and point-based recognition system, creating engaging ways to acknowledge successes without traditional cake-based celebrations.
+A Microsoft Teams app designed to celebrate team and individual achievements through a badge and point-based recognition system, creating engaging ways to acknowledge successes directly within Teams.
+
+**Platform Note:**
+TSRS will be delivered as a Microsoft Teams app, leveraging Teams tabs, bots, messaging extensions, and notifications to provide a seamless, integrated experience for users within the Microsoft 365 ecosystem.
 
 ## 2. User Personas
 
@@ -81,14 +84,14 @@ Permissions:
 
 ### US-001: Recognition Creation
 
-As a Team Member, I want to recognize a colleague's contribution to team success, so that their efforts are acknowledged and celebrated.
+As a Team Member, I want to recognize a colleague's contribution to team success, so that their efforts are acknowledged and celebrated within Microsoft Teams.
 
 Acceptance Criteria:
 
-- User can select team member to recognize
+- User can select team member to recognize (via Teams messaging extension or tab)
 - User can select appropriate badge type
 - User can add personalized message
-- Recognition is visible to recipient and team
+- Recognition is visible to recipient and team (in Teams channel/tab)
 
 ### US-002: Receiving Recognition
 
@@ -224,7 +227,7 @@ Acceptance Criteria:
 
 - API documentation
 - Integration with HR systems
-- Slack/Teams integration
+- Microsoft Teams integration (app, bot, notifications, messaging extension)
 - Email notification capabilities
 
 ### US-015: Achievement Milestones
@@ -272,14 +275,14 @@ Acceptance Criteria:
 
 ### US-019: Mobile Access
 
-As a User, I want to access the recognition system via mobile devices, so that I can participate regardless of location.
+As a User, I want to access the recognition system via Microsoft Teams mobile app, so that I can participate regardless of location.
 
 Acceptance Criteria:
 
-- Responsive web design
-- Native mobile app
-- Offline functionality
-- Push notifications
+- Responsive Teams tab design
+- Teams mobile app compatibility
+- Offline functionality (where possible)
+- Push notifications via Teams
 
 ### US-020: Recognition Notifications
 
@@ -291,4 +294,14 @@ Acceptance Criteria:
 - Email notifications
 - Mobile push notifications
 - Notification preference settings
+
+## 4. Technical Considerations
+
+- The solution will be implemented as a Microsoft Teams app, including:
+  - Teams tabs for dashboards, feeds, analytics, and profile management
+  - Teams bots for notifications and recognition actions
+  - Messaging extensions for quick recognition
+  - Deep integration with Microsoft 365 authentication and user management
+- The backend will provide RESTful APIs and support integration with HR systems
+- All features will be accessible via Teams desktop and mobile clients
 
