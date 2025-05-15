@@ -1,0 +1,9 @@
+# Azure deployment configuration for TSRS
+
+resources:
+  - type: Microsoft.Web/sites
+    apiVersion: '2021-02-01'
+    name: tsrs-web-app
+    location: eastus
+    properties:
+      serverFarmId: tsrs-service-plan

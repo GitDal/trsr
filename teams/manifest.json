@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.11",
+  "version": "1.0.0",
+  "id": "00000000-0000-0000-0000-000000000000",
+  "packageName": "com.example.tsrs",
+  "name": {
+    "short": "TSRS",
+    "full": "Team Success Recognition System"
+  },
+  "description": {
+    "short": "Recognize team success directly in Teams.",
+    "full": "The Team Success Recognition System (TSRS) allows users to recognize and celebrate team achievements directly within Microsoft Teams."
+  },
+  "developer": {
+    "name": "Your Company Name",
+    "websiteUrl": "https://your-company-website.com",
+    "privacyUrl": "https://your-company-website.com/privacy",
+    "termsOfUseUrl": "https://your-company-website.com/terms"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#FFFFFF",
+  "staticTabs": [
+    {
+      "entityId": "home",
+      "name": "Home",
+      "contentUrl": "https://localhost:3000/frontend/index.html",
+      "websiteUrl": "https://localhost:3000",
+      "scopes": ["personal"]
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["localhost"]
+}
